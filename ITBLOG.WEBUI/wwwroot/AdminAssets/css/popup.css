@@ -1,0 +1,18 @@
+﻿.my-btn {
+    color: #fff;
+    background-image: none;
+    border-radius: 35px;
+    padding: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgba(30, 146, 1, 0.7019607843137254);
+}
+.title{
+    padding-bottom:30px;
+}
+.btn-add-blog{
+    padding-bottom:20px;
+}
+.btn-delete{
+    text-align: center;
+}

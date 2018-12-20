@@ -1,0 +1,26 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model IEnumerable<ITBLOG.CORE.ViewModels.LastestBlog>
+<div class="widget latest-posts">
+    <header>
+        <h3 class="h6">Latest Posts</h3>
+    </header>
+    <div class="blog-posts">
+        @foreach(var item in Model)
+        {
+        <a href="@Url.Action("Detail", "Blog", new { id = item.BlogId})">
+            <div class="item d-flex align-items-center">
+                <div class="image"><img src="~/Assets/img/@item.Image" alt="..." class="img-fluid"></div>
+                <div class="title">
+                    <strong>@item.Title</strong>
+                    <div class="d-flex align-items-center">
+                        <div class="comments"><i class="icon-clock"></i>@item.ReleaseDay.ToString("dd/MM/yyyy")</div>
+                    </div>
+                </div>
+            </div>
+        </a>
+        }
+        
+    </div>
+</div>

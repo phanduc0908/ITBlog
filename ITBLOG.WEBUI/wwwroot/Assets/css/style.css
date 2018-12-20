@@ -1,0 +1,10 @@
+﻿body {
+    
+}
+#content-blog {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: inherit;
+    height: 2.2em;
+    white-space: nowrap;
+}

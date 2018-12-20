@@ -1,0 +1,14 @@
+E:\ASP Core\ITBLOG\ITBLOG.INFRA\bin\Debug\netcoreapp2.0\ITBLOG.INFRA.deps.json
+E:\ASP Core\ITBLOG\ITBLOG.INFRA\bin\Debug\netcoreapp2.0\ITBLOG.INFRA.dll
+E:\ASP Core\ITBLOG\ITBLOG.INFRA\obj\Debug\netcoreapp2.0\ITBLOG.INFRA.csproj.CoreCompileInputs.cache
+E:\ASP Core\ITBLOG\ITBLOG.INFRA\obj\Debug\netcoreapp2.0\ITBLOG.INFRA.AssemblyInfoInputs.cache
+E:\ASP Core\ITBLOG\ITBLOG.INFRA\obj\Debug\netcoreapp2.0\ITBLOG.INFRA.AssemblyInfo.cs
+E:\ASP Core\ITBLOG\ITBLOG.INFRA\bin\Debug\netcoreapp2.0\ITBLOG.INFRA.runtimeconfig.json
+E:\ASP Core\ITBLOG\ITBLOG.INFRA\bin\Debug\netcoreapp2.0\ITBLOG.INFRA.runtimeconfig.dev.json
+E:\ASP Core\ITBLOG\ITBLOG.INFRA\bin\Debug\netcoreapp2.0\ITBLOG.INFRA.pdb
+E:\ASP Core\ITBLOG\ITBLOG.INFRA\bin\Debug\netcoreapp2.0\ITBLOG.CORE.dll
+E:\ASP Core\ITBLOG\ITBLOG.INFRA\bin\Debug\netcoreapp2.0\ITBLOG.CORE.pdb
+E:\ASP Core\ITBLOG\ITBLOG.INFRA\obj\Debug\netcoreapp2.0\ITBLOG.INFRA.dll
+E:\ASP Core\ITBLOG\ITBLOG.INFRA\obj\Debug\netcoreapp2.0\ITBLOG.INFRA.pdb
+E:\ASP Core\ITBLOG\ITBLOG.INFRA\obj\Debug\netcoreapp2.0\ITBLOG.INFRA.csprojAssemblyReference.cache
+E:\ASP Core\ITBLOG\ITBLOG.INFRA\obj\Debug\netcoreapp2.0\ITBLOG.INFRA.csproj.CopyComplete

@@ -1,0 +1,63 @@
+﻿@using ITBLOG.CORE.AdminView;
+@model IEnumerable<BlogIndex>
+@{
+    ViewData["Title"] = "Blog Manage";
+    Layout = "~/Views/Shared/_LayoutAdminPage.cshtml";
+}
+
+<div class="container-fluid">
+    <h2 class="title">Blog Manage</h2>
+    <div class="btn-add-blog">
+        <a href="@Url.Action("AddBlog", "BlogManage")" class="my-btn">Add Blog</a>
+    </div>
+
+    <table class="display table dataTable" id="table-blog">
+        <thead>
+            <tr>
+                <th scope="col">STT</th>
+                <th scope="col">Author</th>
+                <th scope="col">Title</th>
+                <th scope="col">Genre</th>
+                <th scope="col">Detail</th>
+                <th scope="col">Edit</th>
+                <th scope="col">Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                int count = 1;
+                foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@count</td>
+                        <td>@item.Author</td>
+                        <td>@item.Title</td>
+                        <td>@item.Genre</td>
+                        <td>
+                            <a href="@Url.Action("Detail", "BlogManage", new { id = item.BlogId})" class="btn btn-primary">
+                                <i class="fas fa-info "></i>  Detail
+                            </a>
+                        </td>
+                        <td>
+                            <a href="@Url.Action("Edit", "BlogManage", new { id = item.BlogId})" class="btn btn-warning">
+                                <i class="fas fa-pen"></i>  Edit
+                            </a>
+                        </td>
+                        <td>
+                            <a href="@Url.Action("Delete", "BlogManage", new { id = item.BlogId})" class="btn btn-danger">
+                                <i class="far fa-trash-alt"></i>  Delete
+                            </a>
+                        </td>
+                    </tr>
+                    count = count + 1;
+                }
+            }
+
+        </tbody>
+    </table>
+</div>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+<script type="text/javascript" src="@Url.Content("~/AdminAssets/js/paging/paging-comment.js")"></script>
+

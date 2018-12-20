@@ -1,0 +1,15 @@
+﻿
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+<div class="widget search">
+    <header>
+        <h3 class="h6">Search the blog</h3>
+    </header>
+    <form asp-controller="Blog" asp-action="GetAllBlog" class="search-form" method="post">
+        <div class="form-group">
+            <input type="search" placeholder="What are you looking for?" name="Query">
+            <button type="submit" class="submit"><i class="icon-search"></i></button>
+        </div>
+    </form>
+</div>

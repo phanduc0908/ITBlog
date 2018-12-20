@@ -1,0 +1,16 @@
+﻿
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model IEnumerable<ITBLOG.CORE.ViewModels.TagViewItem>
+<div class="widget tags">
+    <header>
+        <h3 class="h6">Tags</h3>
+    </header>
+    <ul class="list-inline">
+        @foreach(var item in Model)
+        {
+        <li class="list-inline-item"><a href="@Url.Action("GetAllBlog", "Blog", new { Tag = item.TagName})" class="tag">#@item.TagName</a></li>
+        }
+    </ul>
+</div>

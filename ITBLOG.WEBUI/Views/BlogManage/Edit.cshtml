@@ -1,0 +1,71 @@
+﻿@using ITBLOG.CORE.ViewModels;
+@model BlogViewItem
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_LayoutAdminPage.cshtml";
+}
+<div class="container-fluid">
+    <div class="btn-add-blog">
+        <a href="@Url.Action("Index", "BlogManage")" class="my-btn">Back to List</a>
+    </div>
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="review-content-section">
+                <div id="dropzone1" class="pro-ad">
+                    <form class="dropzone dropzone-custom needsclick add-professors" id="demo1-upload" asp-action="Edit" asp-controller="BlogManage">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                @Html.HiddenFor(Model => Model.BlogId)
+                                <div class="form-group">
+                                    <label asp-for="Author">Author:</label>
+                                    <input type="text" class="form-control" placeholder="Author" asp-for="Author">
+                                    <span asp-validation-for="Author" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label>Title:</label>
+                                    <input type="text" class="form-control" placeholder="Title" asp-for="Title">
+                                    <span asp-validation-for="Title" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label>Genre:</label>
+                                    <input type="text" class="form-control" placeholder="Genre" asp-for="Genre">
+                                    <span asp-validation-for="Genre" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label>Release Day:</label>
+                                    <input type="date" class="form-control" placeholder="Release day" asp-for="ReleaseDay">
+                                    <span asp-validation-for="ReleaseDay" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label>Images:</label>
+                                    <input type="file" class="form-control" asp-for="Image">
+                                    <span asp-validation-for="Image" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="form-group">
+                                    <label>Content header:</label>
+                                    <input type="text" class="form-control" placeholder="Content header" asp-for="ContentHeader">
+                                    <span asp-validation-for="ContentHeader" class="text-danger"></span>
+                                </div>
+                                <div class="form-group res-mg-t-15">
+                                    <label>Content:</label>
+                                    <textarea placeholder="Content" asp-for="Content"></textarea>
+                                    <span asp-validation-for="Content" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="payment-adress">
+                                    <button type="submit" class="btn btn-warning waves-effect waves-light">EDIT</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

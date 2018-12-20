@@ -1,0 +1,9 @@
+E:\ASP Core\ITBLOG\ITBLOG.CORE\bin\Debug\netcoreapp2.0\ITBLOG.CORE.deps.json
+E:\ASP Core\ITBLOG\ITBLOG.CORE\bin\Debug\netcoreapp2.0\ITBLOG.CORE.dll
+E:\ASP Core\ITBLOG\ITBLOG.CORE\bin\Debug\netcoreapp2.0\ITBLOG.CORE.pdb
+E:\ASP Core\ITBLOG\ITBLOG.CORE\obj\Debug\netcoreapp2.0\ITBLOG.CORE.csproj.CoreCompileInputs.cache
+E:\ASP Core\ITBLOG\ITBLOG.CORE\obj\Debug\netcoreapp2.0\ITBLOG.CORE.AssemblyInfoInputs.cache
+E:\ASP Core\ITBLOG\ITBLOG.CORE\obj\Debug\netcoreapp2.0\ITBLOG.CORE.AssemblyInfo.cs
+E:\ASP Core\ITBLOG\ITBLOG.CORE\obj\Debug\netcoreapp2.0\ITBLOG.CORE.dll
+E:\ASP Core\ITBLOG\ITBLOG.CORE\obj\Debug\netcoreapp2.0\ITBLOG.CORE.pdb
+E:\ASP Core\ITBLOG\ITBLOG.CORE\obj\Debug\netcoreapp2.0\ITBLOG.CORE.csprojAssemblyReference.cache
