@@ -1,0 +1,43 @@
+﻿@using ITBLOG.CORE.ViewModels;
+@model IEnumerable<CommentView>
+@{
+    ViewData["Title"] = "Comment Detail";
+    Layout = "~/Views/Shared/_LayoutAdminPage.cshtml";
+}
+
+
+<div class="container-fluid">
+    <table class="display table dataTable" id="table-comment">
+        <thead>
+            <tr>
+                <th scope="col">STT</th>
+                <th scope="col">Name</th>
+                <th scope="col">Content</th>
+                <th scope="col">Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                int count = 1;
+                foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@count</td>
+                        <td>@item.Name</td>
+                        <td>@item.Content</td>
+                        <td>
+                            <a href="@Url.Action("Delete", "CommentManage", new { id = item.CommnentId})" class="cd-popup-trigger btn btn-danger">
+                                <i class="far fa-trash-alt"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    count = count + 1;
+                }
+            }
+        </tbody>
+    </table>
+</div>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+<script type="text/javascript" src="@Url.Content("~/AdminAssets/js/paging/paging-comment.js")"></script>

@@ -1,0 +1,24 @@
+﻿
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model ITBLOG.WEBUI.Models.CommentModel
+<div class="add-comment">
+    <header>
+        <h3 class="h6">Leave a reply</h3>
+    </header>
+    <form class="commenting-form" asp-action="AddComment" asp-controller="Comment">
+        <div class="row">
+            <div class="form-group col-md-6">
+                <input type="text" placeholder="Name" class="form-control" asp-for="Name">
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group col-md-12">
+                <textarea placeholder="Type your comment" class="form-control" asp-for="Content"></textarea>
+            </div>
+            <div class="form-group col-md-12">
+                <button type="submit" class="btn btn-secondary">Submit Comment</button>
+            </div>
+        </div>
+    </form>
+</div>

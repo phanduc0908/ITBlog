@@ -1,0 +1,35 @@
+﻿@model ITBLOG.CORE.ViewModels.UserView
+@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_LayoutLoginPage.cshtml";
+}
+<div class="error-page-int">
+    <div class="text-center m-b-md custom-login">
+        <h3>PLEASE LOGIN TO APP</h3>
+        <p style="color:red;">@ViewBag.ErrorLogin</p>
+    </div>
+    <div class="content-error">
+        <div class="hpanel">
+            <div class="panel-body">
+                <form id="loginForm" method="post" asp-action="Login" asp-controller="Admin">
+                    <div class="form-group">
+                        <label class="control-label" asp-for="Username">Username</label>
+                        <input type="text" placeholder="Username" class="form-control" asp-for="Username">
+                        <span asp-validation-for="Username" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" asp-for="Password">Password</label>
+                        <input type="password" placeholder="Password" class="form-control" asp-for="Password">
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+                    
+                    <button class="btn btn-success btn-block loginbtn">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="text-center login-footer">
+        <p>Copyright © 2018. All rights reserved </p>
+    </div>
+</div>
+
