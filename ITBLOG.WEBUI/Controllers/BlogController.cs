@@ -33,50 +33,12 @@ namespace ITBLOG.WEBUI.Controllers
             var mappedTopThreeBlog = _mapper.Map<IEnumerable<BlogViewItem>>(topThreeBlogs);
             return View(mappedTopThreeBlog);
         }
-        [HttpGet]
-        public IActionResult GetAllBlog(string Tag = null)
-        {
-            Tag = HttpContext.Request.Query["Tag"].ToString();
-            Pagination pg = new Pagination();
-            int offset = 1, page = 1, take = 4;
-            int total = _blogService.GetNumberBlog();
-            if (Convert.ToInt32(HttpContext.Request.Query["Page"]) > 1)
-            {
-                page = Convert.ToInt32(HttpContext.Request.Query["Page"]);
-            }
-            int skip = 0;
-            if (page == 1)
-                skip = 0;
-            else
-                skip = ((page - 1) * take);
 
-            string paging = pg.PagedList(total, page, take, offset, "GetAllBlog", "", "");
-            ViewBag.Paging = paging;
-            //
-            IEnumerable<Blog> Blogs = null;
-            if (String.IsNullOrEmpty(Tag))
-            {
-                Blogs = _blogService.GetBlogs().Skip(skip).Take(take);
-            }
-            else
-            {
-                Blogs = _blogService.GetBlogByTagName(Tag).Skip(skip).Take(take);
-            }
-            var LastBlogs = _blogService.GetLastestBlog();
-            var ListTagNames = _tagService.GetAllTagNames();
-            BlogComment model = new BlogComment
-            {
-                Blogs = _mapper.Map<IEnumerable<BlogViewItem>>(Blogs),
-                LastBlogs = _mapper.Map<IEnumerable<LastestBlog>>(LastBlogs),
-                ListTagNames = _mapper.Map<IEnumerable<TagViewItem>>(ListTagNames)
-            };
-            return View(model);
-        }
-        [HttpPost]
+        [HttpGet]
         public IActionResult GetAllBlog(string Query = null, string Tag = null)
         {
 
-
+            Tag = HttpContext.Request.Query["Tag"].ToString();
             Pagination pg = new Pagination();
             int offset = 1, page = 1, take = 4;
             int total = _blogService.GetNumberBlog();
@@ -97,7 +59,14 @@ namespace ITBLOG.WEBUI.Controllers
             IEnumerable<Blog> Blogs = null;
             if (String.IsNullOrEmpty(Query))
             {
-                Blogs = _blogService.GetBlogs().Skip(skip).Take(take);
+                if (String.IsNullOrEmpty(Tag))
+                {
+                    Blogs = _blogService.GetBlogs().Skip(skip).Take(take);
+                }
+                else
+                {
+                    Blogs = _blogService.GetBlogByTagName(Tag).Skip(skip).Take(take);
+                }
             }
             else
             {

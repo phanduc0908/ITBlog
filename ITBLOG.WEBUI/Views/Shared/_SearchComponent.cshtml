@@ -6,7 +6,7 @@
     <header>
         <h3 class="h6">Search the blog</h3>
     </header>
-    <form asp-controller="Blog" asp-action="GetAllBlog" class="search-form" method="post">
+    <form asp-controller="Blog" asp-action="GetAllBlog" class="search-form" method="get">
         <div class="form-group">
             <input type="search" placeholder="What are you looking for?" name="Query">
             <button type="submit" class="submit"><i class="icon-search"></i></button>
