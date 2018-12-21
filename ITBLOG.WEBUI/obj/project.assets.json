@@ -13793,11 +13793,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\ASP Core\\ITBlog\\ITBLOG.WEBUI\\ITBLOG.WEBUI.csproj",
+      "projectUniqueName": "E:\\git\\ITBlog\\ITBLOG.WEBUI\\ITBLOG.WEBUI.csproj",
       "projectName": "ITBLOG.WEBUI",
-      "projectPath": "E:\\ASP Core\\ITBlog\\ITBLOG.WEBUI\\ITBLOG.WEBUI.csproj",
+      "projectPath": "E:\\git\\ITBlog\\ITBLOG.WEBUI\\ITBLOG.WEBUI.csproj",
       "packagesPath": "C:\\Users\\duc.phanvan\\.nuget\\packages\\",
-      "outputPath": "E:\\ASP Core\\ITBlog\\ITBLOG.WEBUI\\obj\\",
+      "outputPath": "E:\\git\\ITBlog\\ITBLOG.WEBUI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -13816,14 +13816,14 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "E:\\ASP Core\\ITBlog\\ITBLOG.CORE\\ITBLOG.CORE.csproj": {
-              "projectPath": "E:\\ASP Core\\ITBlog\\ITBLOG.CORE\\ITBLOG.CORE.csproj"
+            "E:\\git\\ITBlog\\ITBLOG.CORE\\ITBLOG.CORE.csproj": {
+              "projectPath": "E:\\git\\ITBlog\\ITBLOG.CORE\\ITBLOG.CORE.csproj"
             },
-            "E:\\ASP Core\\ITBlog\\ITBLOG.INFRA\\ITBLOG.INFRA.csproj": {
-              "projectPath": "E:\\ASP Core\\ITBlog\\ITBLOG.INFRA\\ITBLOG.INFRA.csproj"
+            "E:\\git\\ITBlog\\ITBLOG.INFRA\\ITBLOG.INFRA.csproj": {
+              "projectPath": "E:\\git\\ITBlog\\ITBLOG.INFRA\\ITBLOG.INFRA.csproj"
             },
-            "E:\\ASP Core\\ITBlog\\ITBLOG.SERVICE\\ITBLOG.SERVICE.csproj": {
-              "projectPath": "E:\\ASP Core\\ITBlog\\ITBLOG.SERVICE\\ITBLOG.SERVICE.csproj"
+            "E:\\git\\ITBlog\\ITBLOG.SERVICE\\ITBLOG.SERVICE.csproj": {
+              "projectPath": "E:\\git\\ITBlog\\ITBLOG.SERVICE\\ITBLOG.SERVICE.csproj"
             }
           }
         }
