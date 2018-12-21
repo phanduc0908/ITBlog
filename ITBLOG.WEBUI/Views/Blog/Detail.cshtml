@@ -1,7 +1,7 @@
 ﻿@model ITBLOG.CORE.Models.BlogComment
 @using ITBLOG.WEBUI.Models
 @{
-    ViewData["Title"] = Model.blog.Title;
+    ViewData["Title"] = Model.BlogDetail.Title;
     Layout = "~/Views/Shared/_LayoutBlog.cshtml";
 }
 
@@ -14,42 +14,42 @@
                     <div class="post-thumbnail"><img src="~/Assets/img/blog-post-3.jpeg" alt="..." class="img-fluid"></div>
                     <div class="post-details">
                         <div class="post-meta d-flex justify-content-between">
-                            <div class="category"><a href="#">@Model.blog.Genre</a></div>
+                            <div class="category"><a href="#">@Model.BlogDetail.Genre</a></div>
                         </div>
-                        <h1>@Model.blog.Title<a href="#"><i class="fa fa-bookmark-o"></i></a></h1>
+                        <h1>@Model.BlogDetail.Title<a href="#"><i class="fa fa-bookmark-o"></i></a></h1>
                         <div class="post-footer d-flex align-items-center flex-column flex-sm-row">
                             <a href="#" class="author d-flex align-items-center flex-wrap">
                                 <div class="avatar"><img src="~/Assets/img/avatar-1.jpg" alt="..." class="img-fluid"></div>
-                                <div class="title"><span>@Model.blog.Author</span></div>
+                                <div class="title"><span>@Model.BlogDetail.Author</span></div>
                             </a>
                             <div class="d-flex align-items-center flex-wrap">
-                                <div class="date"><i class="icon-clock"></i>@Model.blog.ReleaseDay.ToString("dd/MM/yyyy")</div>
+                                <div class="date"><i class="icon-clock"></i>@Model.BlogDetail.ReleaseDay.ToString("dd/MM/yyyy")</div>
                                 <div class="comments meta-last"><i class="icon-comment"></i>@Model.NumberComments</div>
                             </div>
                         </div>
                         <div class="post-body">
-                            <p class="lead">@Model.blog.ContentHeader</p>
-                            <p> <img src="~/Assets/img/@Model.blog.Image" alt="..." class="img-fluid"></p>
-                            <p>@Model.blog.Content</p>
+                            <p class="lead">@Model.BlogDetail.ContentHeader</p>
+                            <p> <img src="~/Assets/img/@Model.BlogDetail.Image" alt="..." class="img-fluid"></p>
+                            <p>@Model.BlogDetail.Content</p>
                         </div>
                         <div class="posts-nav d-flex justify-content-between align-items-stretch flex-column flex-md-row">
-                            @if(Model.firstBlogId < Model.blog.BlogId)
+                            @if(Model.FirstBlogId < Model.BlogDetail.BlogId)
                             {
-                            <a href="@Url.Action("Detail", "Blog", new { id = Model.previousBlog.BlogId})" class="prev-post text-left d-flex align-items-center">
+                            <a href="@Url.Action("Detail", "Blog", new { id = Model.PreviousBlog.BlogId})" class="prev-post text-left d-flex align-items-center">
                                 <div class="icon prev"><i class="fa fa-angle-left"></i></div>
                                 <div class="text">
                                     <strong class="text-primary">Previous Post </strong>
-                                    <h6>@Model.previousBlog.Title</h6>
+                                    <h6>@Model.PreviousBlog.Title</h6>
                                 </div>
                             </a>
                             }
                             
-                            @if (Model.lastBlogId > Model.blog.BlogId)
+                            @if (Model.LastBlogId > Model.BlogDetail.BlogId)
                             {
-                                <a href="@Url.Action("Detail", "Blog", new { id = Model.nextBlog.BlogId})" class="next-post text-right d-flex align-items-center justify-content-end">
+                                <a href="@Url.Action("Detail", "Blog", new { id = Model.NextBlog.BlogId})" class="next-post text-right d-flex align-items-center justify-content-end">
                                     <div class="text">
                                         <strong class="text-primary">Next Post </strong>
-                                        <h6>@Model.nextBlog.Title</h6>
+                                        <h6>@Model.NextBlog.Title</h6>
                                     </div>
                                     <div class="icon next"><i class="fa fa-angle-right">   </i></div>
                                 </a>

@@ -29,8 +29,8 @@ namespace ITBLOG.WEBUI.Controllers
 
         public IActionResult Index()
         {
-            var TopThreeBlogs = _blogService.GetThreeBlog();
-            var mappedTopThreeBlog = _mapper.Map<IEnumerable<BlogViewItem>>(TopThreeBlogs);
+            var topThreeBlogs = _blogService.GetThreeBlog();
+            var mappedTopThreeBlog = _mapper.Map<IEnumerable<BlogViewItem>>(topThreeBlogs);
             return View(mappedTopThreeBlog);
         }
         [HttpGet]
@@ -118,35 +118,39 @@ namespace ITBLOG.WEBUI.Controllers
         public IActionResult Detail(int Id)
         {
             HttpContext.Session.SetInt32("CurrentBlogId", Id);
-            var CommentByBlogId = _commentService.GetCommentByBlogId(Id);
-            var BlogById = _blogService.GetBlogById(Id);
-            var NumberComments = _commentService.GetNumberComment(Id);
-            var LastThreeBlog = _blogService.GetLastestBlog();
-            var ListTagNames = _tagService.GetAllTagNames();
-            int LastBlogId = _blogService.GetLastBlogId();
-            int FirstBlogId = _blogService.GetFirstBlogId();
-            Blog NextBlog = null;
-            Blog PreviousBlog = null;
-
-            if (LastBlogId > Id)
+            var blogById = _blogService.GetBlogById(Id);
+            if(blogById == null)
             {
-                NextBlog = _blogService.GetNextBlog(Id);
+                return RedirectToAction("Index", "Blog");
             }
-            if (FirstBlogId < Id)
+            var commentByBlogId = _commentService.GetCommentByBlogId(Id);
+            var numberComments = _commentService.GetNumberComment(Id);
+            var lastThreeBlog = _blogService.GetLastestBlog();
+            var listTagNames = _tagService.GetAllTagNames();
+            int lastBlogId = _blogService.GetLastBlogId();
+            int firstBlogId = _blogService.GetFirstBlogId();
+            Blog nextBlog = null;
+            Blog previousBlog = null;
+
+            if (lastBlogId > Id)
             {
-                PreviousBlog = _blogService.GetPreBlog(Id);
+                nextBlog = _blogService.GetNextBlog(Id);
+            }
+            if (lastBlogId < Id)
+            {
+                previousBlog = _blogService.GetPreBlog(Id);
             }
             var blogComment = new BlogComment
             {
-                blog = BlogById,
-                Comments = _mapper.Map<IEnumerable<CommentView>>(CommentByBlogId),
-                NumberComments = NumberComments,
-                LastBlogs = _mapper.Map<IEnumerable<LastestBlog>>(LastThreeBlog),
-                ListTagNames = _mapper.Map<IEnumerable<TagViewItem>>(ListTagNames),
-                nextBlog = _mapper.Map<ChangeBlog>(NextBlog),
-                lastBlogId = LastBlogId,
-                firstBlogId = FirstBlogId,
-                previousBlog = _mapper.Map<ChangeBlog>(PreviousBlog)
+                BlogDetail = blogById,
+                Comments = _mapper.Map<IEnumerable<CommentView>>(commentByBlogId),
+                NumberComments = numberComments,
+                LastBlogs = _mapper.Map<IEnumerable<LastestBlog>>(lastThreeBlog),
+                ListTagNames = _mapper.Map<IEnumerable<TagViewItem>>(listTagNames),
+                NextBlog = _mapper.Map<ChangeBlog>(nextBlog),
+                LastBlogId = lastBlogId,
+                FirstBlogId = firstBlogId,
+                PreviousBlog = _mapper.Map<ChangeBlog>(previousBlog)
             };
             return View(blogComment);
         }
