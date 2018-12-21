@@ -12,3 +12,17 @@ E:\ASP Core\ITBLOG\ITBLOG.INFRA\obj\Debug\netcoreapp2.0\ITBLOG.INFRA.dll
 E:\ASP Core\ITBLOG\ITBLOG.INFRA\obj\Debug\netcoreapp2.0\ITBLOG.INFRA.pdb
 E:\ASP Core\ITBLOG\ITBLOG.INFRA\obj\Debug\netcoreapp2.0\ITBLOG.INFRA.csprojAssemblyReference.cache
 E:\ASP Core\ITBLOG\ITBLOG.INFRA\obj\Debug\netcoreapp2.0\ITBLOG.INFRA.csproj.CopyComplete
+E:\git\ITBlog\ITBLOG.INFRA\bin\Debug\netcoreapp2.0\ITBLOG.INFRA.deps.json
+E:\git\ITBlog\ITBLOG.INFRA\bin\Debug\netcoreapp2.0\ITBLOG.INFRA.runtimeconfig.json
+E:\git\ITBlog\ITBLOG.INFRA\bin\Debug\netcoreapp2.0\ITBLOG.INFRA.runtimeconfig.dev.json
+E:\git\ITBlog\ITBLOG.INFRA\bin\Debug\netcoreapp2.0\ITBLOG.INFRA.dll
+E:\git\ITBlog\ITBLOG.INFRA\bin\Debug\netcoreapp2.0\ITBLOG.INFRA.pdb
+E:\git\ITBlog\ITBLOG.INFRA\bin\Debug\netcoreapp2.0\ITBLOG.CORE.dll
+E:\git\ITBlog\ITBLOG.INFRA\bin\Debug\netcoreapp2.0\ITBLOG.CORE.pdb
+E:\git\ITBlog\ITBLOG.INFRA\obj\Debug\netcoreapp2.0\ITBLOG.INFRA.csprojAssemblyReference.cache
+E:\git\ITBlog\ITBLOG.INFRA\obj\Debug\netcoreapp2.0\ITBLOG.INFRA.csproj.CoreCompileInputs.cache
+E:\git\ITBlog\ITBLOG.INFRA\obj\Debug\netcoreapp2.0\ITBLOG.INFRA.AssemblyInfoInputs.cache
+E:\git\ITBlog\ITBLOG.INFRA\obj\Debug\netcoreapp2.0\ITBLOG.INFRA.AssemblyInfo.cs
+E:\git\ITBlog\ITBLOG.INFRA\obj\Debug\netcoreapp2.0\ITBLOG.INFRA.csproj.CopyComplete
+E:\git\ITBlog\ITBLOG.INFRA\obj\Debug\netcoreapp2.0\ITBLOG.INFRA.dll
+E:\git\ITBlog\ITBLOG.INFRA\obj\Debug\netcoreapp2.0\ITBLOG.INFRA.pdb

@@ -55,10 +55,10 @@ namespace ITBLOG.WEBUI.Controllers
         [HttpGet]
         public IActionResult Detail(int Id)
         {
-            var Blog = _blogService.GetBlogById(Id);
-            var BlogView = _mapper.Map<BlogViewItem>(Blog);
-            BlogView.NumberComments = _commentService.GetNumberComment(Id);
-            return View(BlogView);
+            var blog = _blogService.GetBlogById(Id);
+            var blogView = _mapper.Map<BlogViewItem>(blog);
+            blogView.NumberComments = _commentService.GetNumberComment(Id);
+            return View(blogView);
         }
 
         [HttpGet]
@@ -84,9 +84,9 @@ namespace ITBLOG.WEBUI.Controllers
         [HttpGet]
         public IActionResult Delete(int Id)
         {
-            var Blog = _blogService.GetBlogById(Id);
-            var BlogView = _mapper.Map<BlogViewItem>(Blog);
-            return View(BlogView);
+            var blog = _blogService.GetBlogById(Id);
+            var blogView = _mapper.Map<BlogViewItem>(blog);
+            return View(blogView);
         }
 
         [HttpPost]

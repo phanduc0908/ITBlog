@@ -7,3 +7,12 @@ E:\ASP Core\ITBLOG\ITBLOG.CORE\obj\Debug\netcoreapp2.0\ITBLOG.CORE.AssemblyInfo.
 E:\ASP Core\ITBLOG\ITBLOG.CORE\obj\Debug\netcoreapp2.0\ITBLOG.CORE.dll
 E:\ASP Core\ITBLOG\ITBLOG.CORE\obj\Debug\netcoreapp2.0\ITBLOG.CORE.pdb
 E:\ASP Core\ITBLOG\ITBLOG.CORE\obj\Debug\netcoreapp2.0\ITBLOG.CORE.csprojAssemblyReference.cache
+E:\git\ITBlog\ITBLOG.CORE\bin\Debug\netcoreapp2.0\ITBLOG.CORE.deps.json
+E:\git\ITBlog\ITBLOG.CORE\bin\Debug\netcoreapp2.0\ITBLOG.CORE.dll
+E:\git\ITBlog\ITBLOG.CORE\bin\Debug\netcoreapp2.0\ITBLOG.CORE.pdb
+E:\git\ITBlog\ITBLOG.CORE\obj\Debug\netcoreapp2.0\ITBLOG.CORE.csprojAssemblyReference.cache
+E:\git\ITBlog\ITBLOG.CORE\obj\Debug\netcoreapp2.0\ITBLOG.CORE.csproj.CoreCompileInputs.cache
+E:\git\ITBlog\ITBLOG.CORE\obj\Debug\netcoreapp2.0\ITBLOG.CORE.AssemblyInfoInputs.cache
+E:\git\ITBlog\ITBLOG.CORE\obj\Debug\netcoreapp2.0\ITBLOG.CORE.AssemblyInfo.cs
+E:\git\ITBlog\ITBLOG.CORE\obj\Debug\netcoreapp2.0\ITBLOG.CORE.dll
+E:\git\ITBlog\ITBLOG.CORE\obj\Debug\netcoreapp2.0\ITBLOG.CORE.pdb

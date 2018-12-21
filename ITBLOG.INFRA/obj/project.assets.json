@@ -3832,11 +3832,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\ASP Core\\ITBlog\\ITBLOG.INFRA\\ITBLOG.INFRA.csproj",
+      "projectUniqueName": "E:\\git\\ITBlog\\ITBLOG.INFRA\\ITBLOG.INFRA.csproj",
       "projectName": "ITBLOG.INFRA",
-      "projectPath": "E:\\ASP Core\\ITBlog\\ITBLOG.INFRA\\ITBLOG.INFRA.csproj",
+      "projectPath": "E:\\git\\ITBlog\\ITBLOG.INFRA\\ITBLOG.INFRA.csproj",
       "packagesPath": "C:\\Users\\duc.phanvan\\.nuget\\packages\\",
-      "outputPath": "E:\\ASP Core\\ITBlog\\ITBLOG.INFRA\\obj\\",
+      "outputPath": "E:\\git\\ITBlog\\ITBLOG.INFRA\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -3855,8 +3855,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "E:\\ASP Core\\ITBlog\\ITBLOG.CORE\\ITBLOG.CORE.csproj": {
-              "projectPath": "E:\\ASP Core\\ITBlog\\ITBLOG.CORE\\ITBLOG.CORE.csproj"
+            "E:\\git\\ITBlog\\ITBLOG.CORE\\ITBLOG.CORE.csproj": {
+              "projectPath": "E:\\git\\ITBlog\\ITBLOG.CORE\\ITBLOG.CORE.csproj"
             }
           }
         }

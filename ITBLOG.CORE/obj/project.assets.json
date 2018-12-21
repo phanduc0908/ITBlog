@@ -682,11 +682,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\ASP Core\\ITBLOG\\ITBLOG.CORE\\ITBLOG.CORE.csproj",
+      "projectUniqueName": "E:\\git\\ITBlog\\ITBLOG.CORE\\ITBLOG.CORE.csproj",
       "projectName": "ITBLOG.CORE",
-      "projectPath": "E:\\ASP Core\\ITBLOG\\ITBLOG.CORE\\ITBLOG.CORE.csproj",
+      "projectPath": "E:\\git\\ITBlog\\ITBLOG.CORE\\ITBLOG.CORE.csproj",
       "packagesPath": "C:\\Users\\duc.phanvan\\.nuget\\packages\\",
-      "outputPath": "E:\\ASP Core\\ITBLOG\\ITBLOG.CORE\\obj\\",
+      "outputPath": "E:\\git\\ITBlog\\ITBLOG.CORE\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
