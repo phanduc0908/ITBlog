@@ -3726,10 +3726,7 @@ div#sparklinehome canvas {
     background: #006DF0;
     padding: 20px 0px;
     text-align: center;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    left: 0;
+
 }
 .message-single-top h1, .notification-single-top h1 {
     border-bottom: 1px solid #F6F8FA;
